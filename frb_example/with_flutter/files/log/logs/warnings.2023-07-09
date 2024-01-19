@@ -1,0 +1,256 @@
+2023-07-09T12:17:04.656670Z  WARN logging_msg{yaks=6}:write{yak=3}: flutter_rust_bridge_example::app::system::log::itracing: could not locate log!
+2023-07-09T12:17:04.657032Z ERROR logging_msg{yaks=6}: flutter_rust_bridge_example::app::system::log::itracing: failed to log message yak=3 error=missing log error.sources=[missing log, out of space]
+2023-07-09T12:44:57.431911Z  WARN logging_msg{yaks=6}:write{yak=3}: flutter_rust_bridge_example::app::system::log::itracing: could not locate log!
+2023-07-09T12:44:57.432479Z ERROR logging_msg{yaks=6}: flutter_rust_bridge_example::app::system::log::itracing: failed to log message yak=3 error=missing log error.sources=[missing log, out of space]
+2023-07-09T12:44:57.561394Z  WARN flutter_rust_bridge_example::startup: All settings are successfully cached    
+2023-07-09T12:44:57.561832Z  WARN flutter_rust_bridge_example::startup: All applications are successfully cached    
+2023-07-09T12:44:57.606945Z  WARN flutter_rust_bridge_example::startup: All java scripts are successfully cached    
+2023-07-09T12:44:57.705023Z  WARN flutter_rust_bridge_example::startup: Starting server @"localhost:3030"    
+2023-07-09T12:45:17.868714Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.847s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:20.011780Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 2.089s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:21.725332Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.620s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:24.144167Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 2.212s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:26.597911Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 2.244s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:28.810128Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 6, elapsed: 1.709s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33306'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:30.523129Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 1.690s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:32.301517Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.517s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:33.838813Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 6, elapsed: 1.326s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33306'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:35.469618Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 1.507s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:37.344954Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 4, elapsed: 1.727s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:37.499092Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 11, elapsed: 1.773s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '31828'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:37.612480Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 11, elapsed: 1.892s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:38.958633Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 65, elapsed: 1.319s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34292'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:41.258390Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 40, elapsed: 2.019s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34297'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:43.385391Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 32, elapsed: 2.024s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33341'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:45.875923Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 40, elapsed: 2.240s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:46.196880Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 2.025s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34408'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:53.920329Z  WARN sqlx::query: SELECT * FROM po_pending_delivery_v …; rows affected: 0, rows returned: 2, elapsed: 7.507s
+
+SELECT
+  *
+FROM
+  po_pending_delivery_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:57.119233Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 3.172s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34506'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:46:07.491603Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 65, elapsed: 1.584s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:48:45.617410Z  WARN sqlx::query: SELECT * FROM po_pending_delivery_v …; rows affected: 0, rows returned: 2, elapsed: 4.735s
+
+SELECT
+  *
+FROM
+  po_pending_delivery_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:48:57.512430Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 1.699s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  

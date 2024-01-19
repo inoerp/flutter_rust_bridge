@@ -1,0 +1,53 @@
+use chrono::{DateTime, Utc};
+
+use crate::app::system::error::no_value::NoValueFoundError;
+use crate::db::{model::db_conn_map::DbConnMapping, select::Select};
+
+{{struct_definition}}
+
+impl {{struct_name}} {
+    pub async fn find_all(
+        conn_mapping: &DbConnMapping,
+    ) -> Result<Vec<linked_hash_map::LinkedHashMap<String, String>>, NoValueFoundError> {
+        let sql = "SELECT * from {{table_name}}";
+        Select::new(conn_mapping).select(sql, &vec![]).await
+    }
+
+    pub async fn find_by_id(
+        conn_mapping: &DbConnMapping,
+        id: &str,
+    ) -> Result<Vec<linked_hash_map::LinkedHashMap<String, String>>, NoValueFoundError> {
+        let sql = format!("SELECT * from {{table_name}} where {{table_name}}_id ='{}' ", id);
+        Select::new(conn_mapping)
+            .select(sql.as_str(), &vec![])
+            .await
+    }
+
+    pub async fn find_by_sql(
+        conn_mapping: &DbConnMapping,
+        sql: &str,
+        params: &Vec<String>,
+    ) -> Result<Vec<linked_hash_map::LinkedHashMap<String, String>>, NoValueFoundError> {
+        Select::new(conn_mapping).select(sql, &vec![]).await
+    }
+}
+
+
+
+mod tests {
+    use crate::{
+        app::{cache::global_cache::GlobalCache, system::error::no_value::NoValueFoundError},
+        model::{entity::action::{{table_name}}::{{struct_name}}, state::global_state::GlobalState}, startup,
+    };
+
+    #[tokio::test]
+    async fn test_find_all() {
+        startup::init().await.expect("Unable to init");
+        let gs: GlobalState = GlobalCache::get_global_state().expect("Unable to find gs");
+        let pools1 = gs.conn_pools.lock().await;
+        let conn = pools1.get("ierp").expect("Unable to find dbConnMap");
+        let all_data = {{struct_name}}::find_all(conn).await.expect("Unable to find result");
+
+        log::info!("all data {:?}", all_data);
+    }
+}

@@ -1,0 +1,465 @@
+2023-07-09T12:46:05.825527Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 8.383ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:46:05.827628Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 898.100µs
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:05.832350Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:05.833140Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.022449    
+2023-07-09T12:46:05.842580Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 599.700µs
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:05.843119Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:05.843523Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.007537    
+2023-07-09T12:46:05.900290Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 3, elapsed: 62.861ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND parent_path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:46:07.491603Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 65, elapsed: 1.584s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:46:07.566415Z  INFO sqlx::query: SELECT * FROM po_header_ev …; rows affected: 0, rows returned: 10, elapsed: 69.165ms
+
+SELECT
+  *
+FROM
+  po_header_ev
+WHERE
+  1 = 1
+limit
+  10 offset 0
+  
+2023-07-09T12:46:07.602327Z  INFO sqlx::query: SELECT * FROM sys_action_ev …; rows affected: 0, rows returned: 10, elapsed: 9.564ms
+
+SELECT
+  *
+FROM
+  sys_action_ev
+where
+  1 = 1
+  AND vv_path_url = 'PoHeaderEv'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:46:07.638802Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:07.680340Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoHeaderEv?&limit=10 HTTP/1.1" 200 53832 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 1.871160    
+2023-07-09T12:46:13.469200Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.610ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:13.470037Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:13.470362Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012827    
+2023-07-09T12:46:13.484080Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.105ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:13.484912Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:13.485481Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.011085    
+2023-07-09T12:46:15.421015Z  INFO sqlx::query: SELECT * FROM po_header_ev …; rows affected: 0, rows returned: 1, elapsed: 8.042ms
+
+SELECT
+  *
+FROM
+  po_header_ev
+WHERE
+  1 = 1
+  AND po_header_id = '65'
+limit
+  20 offset 0
+  
+2023-07-09T12:46:15.427802Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:15.434497Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoHeaderEv(poHeaderId=65) HTTP/1.1" 200 5490 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.031290    
+2023-07-09T12:46:15.493090Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.160ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:15.493706Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:15.494097Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.010587    
+2023-07-09T12:46:15.508534Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.500ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:15.509207Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:15.509683Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012716    
+2023-07-09T12:46:15.703601Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 170.283ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:15.706641Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:15.708735Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 1382 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.185480    
+2023-07-09T12:46:15.878256Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 134.092ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_PoDetailEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:15.879073Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:15.879577Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X1BvRGV0YWlsRXYlJyAgQU5EIHBhcmVudF9wYXRoX3VybCBMSUtFICclUG9IZWFkZXJFdiUnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.149202    
+2023-07-09T12:46:16.027764Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 124.418ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_PoDetailEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.030440Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.031799Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9Qb0RldGFpbEV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 1440 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.141329    
+2023-07-09T12:46:16.186112Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 126.047ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_PoLineEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.186976Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.187834Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X1BvTGluZUV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.132894    
+2023-07-09T12:46:16.374621Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 140.143ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_PoLineEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.376373Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.377599Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9Qb0xpbmVFdiUnICBBTkQgcGFyZW50X3BhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScg HTTP/1.1" 200 1418 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.157108    
+2023-07-09T12:46:16.531540Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 113.594ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%SysCommentEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.534044Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.534544Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVTeXNDb21tZW50RXYlJyAgQU5EIHBhcmVudF9wYXRoX3VybCBMSUtFICclUG9IZWFkZXJFdiUnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.138009    
+2023-07-09T12:46:16.701201Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 135.067ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%SysCommentEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.702115Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.702755Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclU3lzQ29tbWVudEV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.142495    
+2023-07-09T12:46:16.849967Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 126.340ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_Attachments%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.850663Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.851509Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X0F0dGFjaG1lbnRzJScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.133307    
+2023-07-09T12:46:16.978371Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 106.474ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_Attachments%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:16.979156Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:16.979564Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9BdHRhY2htZW50cyUnICBBTkQgcGFyZW50X3BhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.112431    
+2023-07-09T12:46:17.006435Z  INFO sqlx::query: SELECT * from content_view_line …; rows affected: 0, rows returned: 0, elapsed: 7.877ms
+
+SELECT
+  *
+from
+  content_view_line
+where
+  content_view_template_id = '0'
+  
+2023-07-09T12:46:17.007165Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:17.007662Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCAqIGZyb20gY29udGVudF92aWV3X2xpbmUgd2hlcmUgY29udGVudF92aWV3X3RlbXBsYXRlX2lkID0gJzAnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.013142    
+2023-07-09T12:46:23.568560Z  INFO sqlx::query: UPDATE po_header SET description …; rows affected: 1, rows returned: 0, elapsed: 41.023ms
+
+UPDATE
+  po_header
+SET
+  description = ?,
+  last_updated_by = ?,
+  last_update_date = ?
+WHERE
+  1 = 1
+  AND po_header_id = ?
+  
+2023-07-09T12:46:23.569431Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:23.576329Z  INFO actix_web::middleware::logger: ::1 "PATCH /api/ierp/PoHeaderEv(poHeaderId=65) HTTP/1.1" 200 46 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.070878    
+2023-07-09T12:46:27.432612Z  INFO sqlx::query: SELECT * FROM po_header_ev …; rows affected: 0, rows returned: 1, elapsed: 7.179ms
+
+SELECT
+  *
+FROM
+  po_header_ev
+WHERE
+  1 = 1
+  AND po_header_id = '65'
+limit
+  20 offset 0
+  
+2023-07-09T12:46:27.440039Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:27.450005Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoHeaderEv(poHeaderId=65) HTTP/1.1" 200 5482 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.039038    
+2023-07-09T12:46:27.628131Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 567.400µs
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:27.629278Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:27.630085Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012476    
+2023-07-09T12:46:27.807425Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 128.899ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:27.810676Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:27.812702Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 1382 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.142173    
+2023-07-09T12:46:27.829744Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 618.700µs
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:46:27.831861Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:27.832365Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.136745    
+2023-07-09T12:46:28.103705Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 230.804ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_PoDetailEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.104577Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.105179Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X1BvRGV0YWlsRXYlJyAgQU5EIHBhcmVudF9wYXRoX3VybCBMSUtFICclUG9IZWFkZXJFdiUnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.236975    
+2023-07-09T12:46:28.358754Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 194.756ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_PoDetailEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.362376Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.364590Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9Qb0RldGFpbEV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 1440 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.207452    
+2023-07-09T12:46:28.475417Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 55.672ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_PoLineEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.476037Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.476554Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X1BvTGluZUV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.061047    
+2023-07-09T12:46:28.627286Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 118.385ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_PoLineEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.628936Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.630189Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9Qb0xpbmVFdiUnICBBTkQgcGFyZW50X3BhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScg HTTP/1.1" 200 1418 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.127298    
+2023-07-09T12:46:28.735248Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 86.656ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%SysCommentEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.746326Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.746953Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVTeXNDb21tZW50RXYlJyAgQU5EIHBhcmVudF9wYXRoX3VybCBMSUtFICclUG9IZWFkZXJFdiUnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.101354    
+2023-07-09T12:46:28.894930Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 106.468ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%SysCommentEv%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:28.895902Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:28.896565Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclU3lzQ29tbWVudEV2JScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.116848    
+2023-07-09T12:46:29.028452Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 111.668ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoHeaderEv_Attachments%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:29.029470Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:29.030072Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2X0F0dGFjaG1lbnRzJScgIEFORCBwYXJlbnRfcGF0aF91cmwgTElLRSAnJVBvSGVhZGVyRXYlJyA= HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.118889    
+2023-07-09T12:46:29.155873Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 108.742ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code LIKE '%PoHeaderEv_Attachments%'
+  AND parent_path_url LIKE '%PoHeaderEv%'
+  
+2023-07-09T12:46:29.156878Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:29.157360Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSBMSUtFICclUG9IZWFkZXJFdl9BdHRhY2htZW50cyUnICBBTkQgcGFyZW50X3BhdGhfdXJsIExJS0UgJyVQb0hlYWRlckV2JScg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.115806    
+2023-07-09T12:46:29.174707Z  INFO sqlx::query: SELECT * from content_view_line …; rows affected: 0, rows returned: 0, elapsed: 2.406ms
+
+SELECT
+  *
+from
+  content_view_line
+where
+  content_view_template_id = '0'
+  
+2023-07-09T12:46:29.175298Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:46:29.175774Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCAqIGZyb20gY29udGVudF92aWV3X2xpbmUgd2hlcmUgY29udGVudF92aWV3X3RlbXBsYXRlX2lkID0gJzAnIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.006900    

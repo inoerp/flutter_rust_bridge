@@ -1,0 +1,1519 @@
+2023-07-09T12:45:04.040763Z  INFO actix_web::middleware::logger: ::1 "GET / HTTP/1.1" 200 1743 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.026283    
+2023-07-09T12:45:07.876667Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 17.467ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:07.894895Z  INFO sqlx::query: SELECT * FROM app_instance …; rows affected: 0, rows returned: 20, elapsed: 15.265ms
+
+SELECT
+  *
+FROM
+  app_instance
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:07.909841Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:07.920642Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/AppInstance HTTP/1.1" 200 14068 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.067690    
+2023-07-09T12:45:08.329200Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 12.406ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:45:08.344241Z  INFO sqlx::query: SELECT * FROM rikdata_application …; rows affected: 0, rows returned: 16, elapsed: 10.624ms
+
+SELECT
+  *
+FROM
+  rikdata_application
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:08.349527Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:08.352706Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/RikdataApplication HTTP/1.1" 200 7676 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.040165    
+2023-07-09T12:45:08.410065Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 18.476ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:08.431305Z  INFO sqlx::query: SELECT * FROM rest_type …; rows affected: 0, rows returned: 1, elapsed: 18.904ms
+
+SELECT
+  *
+FROM
+  rest_type
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:08.432203Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:08.433068Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/RestType HTTP/1.1" 200 314 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.045108    
+2023-07-09T12:45:08.475554Z  INFO sqlx::query: SELECT * FROM rikdata_application …; rows affected: 0, rows returned: 16, elapsed: 16.550ms
+
+SELECT
+  *
+FROM
+  rikdata_application
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:08.481558Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:08.485293Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/RikdataApplication HTTP/1.1" 200 7676 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.029739    
+2023-07-09T12:45:08.535695Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 18.605ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:45:08.640415Z  INFO sqlx::query: SELECT phrase_code, meaning from …; rows affected: 0, rows returned: 4330, elapsed: 100.239ms
+
+SELECT
+  phrase_code,
+  meaning
+from
+  sys_translation
+WHERE
+  language = 'en'
+  
+2023-07-09T12:45:08.800706Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:09.007165Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUIHBocmFzZV9jb2RlLCBtZWFuaW5nIGZyb20gc3lzX3RyYW5zbGF0aW9uICBXSEVSRSBsYW5ndWFnZSA9ICdlbic= HTTP/1.1" 200 273517 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.495430    
+2023-07-09T12:45:09.393830Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 2.379ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:09.398937Z  INFO sqlx::query: SELECT * FROM list_of_value …; rows affected: 0, rows returned: 20, elapsed: 2.457ms
+
+SELECT
+  *
+FROM
+  list_of_value
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:09.401386Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:09.403604Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/ListOfValue HTTP/1.1" 200 6465 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.016299    
+2023-07-09T12:45:09.414539Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 4.701ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:09.417942Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:09.418297Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.026407    
+2023-07-09T12:45:09.431849Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.403ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:09.432365Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:09.432669Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.010150    
+2023-07-09T12:45:11.986216Z  INFO actix_web::middleware::logger: ::1 "GET /flutter_service_worker.js?v=1898282938 HTTP/1.1" 304 0 "http://localhost:3030/flutter_service_worker.js?v=1898282938" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.009477    
+2023-07-09T12:45:12.809814Z  INFO sqlx::query: SELECT * from rd_sec_user …; rows affected: 0, rows returned: 1, elapsed: 1.539ms
+
+SELECT
+  *
+from
+  rd_sec_user
+WHERE
+  1 = 1
+  AND username = ?
+  
+2023-07-09T12:45:14.667555Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 4, elapsed: 1.681ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'bu_access_group_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:45:14.669634Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 2, elapsed: 1.684ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'inv_access_group_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:45:14.671174Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 2, elapsed: 2.815ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'org_code_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:45:14.758779Z  INFO sqlx::query: SELECT ra.obj_class_name, ra.access_level FROM …; rows affected: 0, rows returned: 4566, elapsed: 87.527ms
+
+SELECT
+  ra.obj_class_name,
+  ra.access_level
+FROM
+  rd_sec_role_access ra
+WHERE
+  ra.role_code = 'USER'
+UNION
+SELECT
+  ra.obj_class_name,
+  ra.access_level
+FROM
+  rd_sec_user_role ur,
+  rd_sec_role_access ra
+WHERE
+  1 = 1
+  AND (ur.role_code = ra.role_code)
+  AND ur.user_id = '2'
+  
+2023-07-09T12:45:15.080642Z  INFO actix_web::middleware::logger: ::1 "POST /auth/login HTTP/1.1" 200 141676 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.278605    
+2023-07-09T12:45:15.212700Z  INFO sqlx::query: SELECT * FROM list_of_value …; rows affected: 0, rows returned: 6, elapsed: 4.175ms
+
+SELECT
+  *
+FROM
+  list_of_value
+WHERE
+  type LIKE '%oracleCloudSimilar%'
+  
+2023-07-09T12:45:15.214505Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.216127Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBsaXN0X29mX3ZhbHVlICBXSEVSRSB0eXBlIExJS0UgJyVvcmFjbGVDbG91ZFNpbWlsYXIlJyA= HTTP/1.1" 200 1750 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.013986    
+2023-07-09T12:45:15.230335Z  INFO sqlx::query: SELECT * FROM user_dashboard …; rows affected: 0, rows returned: 1, elapsed: 4.617ms
+
+SELECT
+  *
+FROM
+  user_dashboard
+where
+  dashboard_name = 'Oracle'
+  
+2023-07-09T12:45:15.233764Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.234426Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCAqIEZST00gIHVzZXJfZGFzaGJvYXJkIHdoZXJlICBkYXNoYm9hcmRfbmFtZSA9J09yYWNsZScg HTTP/1.1" 200 390 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.021396    
+2023-07-09T12:45:15.287139Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 3.701ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.287989Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.288375Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.010140    
+2023-07-09T12:45:15.298749Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 1.989ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.299339Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.299829Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.006066    
+2023-07-09T12:45:15.312930Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 1.573ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.313722Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.314315Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.007914    
+2023-07-09T12:45:15.323461Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 1.208ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.323927Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.324231Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.005614    
+2023-07-09T12:45:15.336932Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 1.977ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.338741Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.339238Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012631    
+2023-07-09T12:45:15.355651Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 0, elapsed: 2.405ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_code = ''
+  AND type = 'EntityType.oracleCloudSimilar'
+  
+2023-07-09T12:45:15.356315Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.356776Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfY29kZSA9ICcnICBBTkQgdHlwZSA9ICdFbnRpdHlUeXBlLm9yYWNsZUNsb3VkU2ltaWxhcicg HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.008130    
+2023-07-09T12:45:15.389962Z  INFO sqlx::query: SELECT * From tab_header …; rows affected: 0, rows returned: 5, elapsed: 2.495ms
+
+SELECT
+  *
+From
+  tab_header
+where
+  tab_code IN (
+    'MES_SCM',
+    'MES_FIN',
+    'MES_HCM',
+    'MES_CRM',
+    'MES_OTHERS'
+  )
+  
+2023-07-09T12:45:15.391639Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.393166Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRnJvbSB0YWJfaGVhZGVyIHdoZXJlIHRhYl9jb2RlIElOICAoJ01FU19TQ00nLCdNRVNfRklOJywnTUVTX0hDTScsJ01FU19DUk0nLCdNRVNfT1RIRVJTJykg HTTP/1.1" 200 1058 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.011809    
+2023-07-09T12:45:15.403721Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.738ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:15.404510Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.405318Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.018211    
+2023-07-09T12:45:15.420384Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.263ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:15.421021Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.421633Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012649    
+2023-07-09T12:45:15.557892Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.740ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:15.558786Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.559498Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.018541    
+2023-07-09T12:45:15.563069Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 15.194ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:15.569596Z  INFO sqlx::query: SELECT * FROM tab_header …; rows affected: 0, rows returned: 1, elapsed: 1.368ms
+
+SELECT
+  *
+FROM
+  tab_header
+WHERE
+  1 = 1
+  AND id = '1'
+limit
+  20 offset 0
+  
+2023-07-09T12:45:15.571417Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.572898Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/TabHeader(id=1) HTTP/1.1" 200 208 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.031283    
+2023-07-09T12:45:15.592010Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.903ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:15.593403Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.594573Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.022794    
+2023-07-09T12:45:15.601046Z  INFO sqlx::query: SELECT * FROM tab_header …; rows affected: 0, rows returned: 1, elapsed: 2.262ms
+
+SELECT
+  *
+FROM
+  tab_header
+WHERE
+  1 = 1
+  AND id = '1'
+limit
+  20 offset 0
+  
+2023-07-09T12:45:15.601847Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.602319Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/TabHeader(id=1) HTTP/1.1" 200 208 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.021599    
+2023-07-09T12:45:15.630475Z  INFO sqlx::query: SELECT * FROM tab_line …; rows affected: 0, rows returned: 11, elapsed: 2.048ms
+
+SELECT
+  *
+FROM
+  tab_line
+WHERE
+  1 = 1
+  AND tab_header_id = '1'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:45:15.635614Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.639076Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCAqICAgRlJPTSB0YWJfbGluZSAgICAgICBXSEVSRSAxID0gMSAgICAgIEFORCB0YWJfaGVhZGVyX2lkID0gJzEnICAgIE9SREVSIEJZIHNlcXVlbmNlIEFTQyA= HTTP/1.1" 200 3804 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.016141    
+2023-07-09T12:45:15.681979Z  INFO sqlx::query: SELECT * FROM module_group …; rows affected: 0, rows returned: 2, elapsed: 5.076ms
+
+SELECT
+  *
+FROM
+  module_group
+WHERE
+  group_code LIKE '%SCM_oracleCloud%'
+  
+2023-07-09T12:45:15.682670Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.683263Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtb2R1bGVfZ3JvdXAgIFdIRVJFIGdyb3VwX2NvZGUgTElLRSAnJVNDTV9vcmFjbGVDbG91ZCUnIA== HTTP/1.1" 200 302 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.013248    
+2023-07-09T12:45:15.693502Z  INFO sqlx::query: SELECT * FROM chart_header …; rows affected: 0, rows returned: 2, elapsed: 2.467ms
+
+SELECT
+  *
+FROM
+  chart_header
+WHERE
+  chart_code LIKE '%inv_onhand_summary_v%'
+  
+2023-07-09T12:45:15.694540Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.695371Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9oZWFkZXIgIFdIRVJFIGNoYXJ0X2NvZGUgTElLRSAnJWludl9vbmhhbmRfc3VtbWFyeV92JScg HTTP/1.1" 200 972 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.024565    
+2023-07-09T12:45:15.702060Z  INFO sqlx::query: SELECT * FROM chart_header …; rows affected: 0, rows returned: 1, elapsed: 2.504ms
+
+SELECT
+  *
+FROM
+  chart_header
+WHERE
+  chart_code LIKE '%SD_OPEN_SALES_ORDERS_V_PIE%'
+  
+2023-07-09T12:45:15.702962Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.704347Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9oZWFkZXIgIFdIRVJFIGNoYXJ0X2NvZGUgTElLRSAnJVNEX09QRU5fU0FMRVNfT1JERVJTX1ZfUElFJScg HTTP/1.1" 200 501 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.011005    
+2023-07-09T12:45:15.712710Z  INFO sqlx::query: SELECT * FROM message_box …; rows affected: 0, rows returned: 5, elapsed: 3.620ms
+
+SELECT
+  *
+FROM
+  message_box
+WHERE
+  message_code LIKE '%INV_ONHAND%'
+  
+2023-07-09T12:45:15.715161Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.717050Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZXNzYWdlX2JveCAgV0hFUkUgbWVzc2FnZV9jb2RlIExJS0UgJyVJTlZfT05IQU5EJScg HTTP/1.1" 200 2789 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.023334    
+2023-07-09T12:45:15.721543Z  INFO sqlx::query: SELECT * FROM chart_header …; rows affected: 0, rows returned: 1, elapsed: 987.300µs
+
+SELECT
+  *
+FROM
+  chart_header
+WHERE
+  chart_code LIKE '%SD_OPEN_SALES_ORDERS_V_VB%'
+  
+2023-07-09T12:45:15.723878Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.725291Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9oZWFkZXIgIFdIRVJFIGNoYXJ0X2NvZGUgTElLRSAnJVNEX09QRU5fU0FMRVNfT1JERVJTX1ZfVkIlJyA= HTTP/1.1" 200 502 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.030131    
+2023-07-09T12:45:15.731841Z  INFO sqlx::query: SELECT * FROM chart_header …; rows affected: 0, rows returned: 1, elapsed: 2.784ms
+
+SELECT
+  *
+FROM
+  chart_header
+WHERE
+  chart_code LIKE '%SD_OPEN_SALES_ORDERS_V_LINE%'
+  
+2023-07-09T12:45:15.733046Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.733761Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9oZWFkZXIgIFdIRVJFIGNoYXJ0X2NvZGUgTElLRSAnJVNEX09QRU5fU0FMRVNfT1JERVJTX1ZfTElORSUnIA== HTTP/1.1" 200 499 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.037641    
+2023-07-09T12:45:15.739464Z  INFO sqlx::query: SELECT * FROM message_box …; rows affected: 0, rows returned: 1, elapsed: 1.608ms
+
+SELECT
+  *
+FROM
+  message_box
+WHERE
+  message_code LIKE '%INV_ONHAND5%'
+  
+2023-07-09T12:45:15.741229Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.742589Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZXNzYWdlX2JveCAgV0hFUkUgbWVzc2FnZV9jb2RlIExJS0UgJyVJTlZfT05IQU5ENSUnIA== HTTP/1.1" 200 524 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.032556    
+2023-07-09T12:45:15.749212Z  INFO sqlx::query: SELECT * FROM message_box …; rows affected: 0, rows returned: 1, elapsed: 3.052ms
+
+SELECT
+  *
+FROM
+  message_box
+WHERE
+  message_code LIKE '%INV_ONHAND2%'
+  
+2023-07-09T12:45:15.750031Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.750765Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZXNzYWdlX2JveCAgV0hFUkUgbWVzc2FnZV9jb2RlIExJS0UgJyVJTlZfT05IQU5EMiUnIA== HTTP/1.1" 200 589 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.035995    
+2023-07-09T12:45:15.757327Z  INFO sqlx::query: SELECT * FROM report_header …; rows affected: 0, rows returned: 1, elapsed: 1.663ms
+
+SELECT
+  *
+FROM
+  report_header
+WHERE
+  report_code LIKE '%INV_ONHAND_DETAILS%'
+  
+2023-07-09T12:45:15.759183Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.760546Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSByZXBvcnRfaGVhZGVyICBXSEVSRSByZXBvcnRfY29kZSBMSUtFICclSU5WX09OSEFORF9ERVRBSUxTJScg HTTP/1.1" 200 240 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.043984    
+2023-07-09T12:45:15.784390Z  INFO sqlx::query: SELECT * FROM message_box …; rows affected: 0, rows returned: 1, elapsed: 1.280ms
+
+SELECT
+  *
+FROM
+  message_box
+WHERE
+  message_code LIKE '%INV_ONHAND5%'
+  
+2023-07-09T12:45:15.785213Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.786131Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZXNzYWdlX2JveCAgV0hFUkUgbWVzc2FnZV9jb2RlIExJS0UgJyVJTlZfT05IQU5ENSUnIA== HTTP/1.1" 200 524 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.005769    
+2023-07-09T12:45:15.800027Z  INFO sqlx::query: SELECT * FROM message_box …; rows affected: 0, rows returned: 1, elapsed: 1.319ms
+
+SELECT
+  *
+FROM
+  message_box
+WHERE
+  message_code LIKE '%INV_ONHAND5%'
+  
+2023-07-09T12:45:15.800871Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.801575Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZXNzYWdlX2JveCAgV0hFUkUgbWVzc2FnZV9jb2RlIExJS0UgJyVJTlZfT05IQU5ENSUnIA== HTTP/1.1" 200 524 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.006241    
+2023-07-09T12:45:15.908443Z  INFO sqlx::query: SELECT mod.* FROM module_group_assignment …; rows affected: 0, rows returned: 7, elapsed: 9.014ms
+
+SELECT
+  mod.*
+FROM
+  module_group_assignment mga,
+  module_group mg,
+  module mod
+WHERE
+  mg.id = mga.module_group_id
+  AND mod.module_type = mg.module_group_type
+  AND mod.module_code = mga.module_code
+  AND mg.type = 'oracleCloudSimilar'
+  AND mod.module_type = 'SCM'
+  
+2023-07-09T12:45:15.909554Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.910377Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBtb2QuKiAgICAgICAgRlJPTSBtb2R1bGVfZ3JvdXBfYXNzaWdubWVudCBtZ2EsICAgICAgbW9kdWxlX2dyb3VwIG1nLCAgICAgIG1vZHVsZSBtb2QgICAgICBXSEVSRSBtZy5pZCA9IG1nYS5tb2R1bGVfZ3JvdXBfaWQgICAgICBBTkQgbW9kLm1vZHVsZV90eXBlID0gICAgbWcubW9kdWxlX2dyb3VwX3R5cGUgQU5EIG1vZC5tb2R1bGVfY29kZSA9IG1nYS5tb2R1bGVfY29kZSAgICAgIEFORCBtZy50eXBlID0gJ29yYWNsZUNsb3VkU2ltaWxhcicgICAgICBBTkQgbW9kLm1vZHVsZV90eXBlID0gJ1NDTScg HTTP/1.1" 200 1045 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.027664    
+2023-07-09T12:45:15.921012Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 4.054ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'chart_header'
+  AND path_code = 'chart_header'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.923161Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.924633Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ2NoYXJ0X2hlYWRlcicgIEFORCBwYXRoX2NvZGUgPSAnY2hhcnRfaGVhZGVyJyAgQU5EIHR5cGUgPSAnbG9jYWwnIA== HTTP/1.1" 200 1359 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.035820    
+2023-07-09T12:45:15.933845Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 3.771ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'message_box'
+  AND path_code = 'message_box'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.935624Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.937533Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ21lc3NhZ2VfYm94JyAgQU5EIHBhdGhfY29kZSA9ICdtZXNzYWdlX2JveCcgIEFORCB0eXBlID0gJ2xvY2FsJyA= HTTP/1.1" 200 1357 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.048181    
+2023-07-09T12:45:15.943021Z  INFO sqlx::query: SELECT * FROM report_line …; rows affected: 0, rows returned: 3, elapsed: 1.792ms
+
+SELECT
+  *
+FROM
+  report_line
+WHERE
+  report_header_id = '6'
+  
+2023-07-09T12:45:15.943976Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.944977Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSByZXBvcnRfbGluZSAgV0hFUkUgcmVwb3J0X2hlYWRlcl9pZCA9ICc2JyA= HTTP/1.1" 200 566 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.046028    
+2023-07-09T12:45:15.951141Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.055ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'chart_header'
+  AND path_code = 'chart_header'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.952852Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.953719Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ2NoYXJ0X2hlYWRlcicgIEFORCBwYXRoX2NvZGUgPSAnY2hhcnRfaGVhZGVyJyAgQU5EIHR5cGUgPSAnbG9jYWwnIA== HTTP/1.1" 200 1359 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.022938    
+2023-07-09T12:45:15.960009Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.337ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'message_box'
+  AND path_code = 'message_box'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.961050Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.961892Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ21lc3NhZ2VfYm94JyAgQU5EIHBhdGhfY29kZSA9ICdtZXNzYWdlX2JveCcgIEFORCB0eXBlID0gJ2xvY2FsJyA= HTTP/1.1" 200 1357 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.018901    
+2023-07-09T12:45:15.967811Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 1.839ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'chart_header'
+  AND path_code = 'chart_header'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.969216Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.970503Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ2NoYXJ0X2hlYWRlcicgIEFORCBwYXRoX2NvZGUgPSAnY2hhcnRfaGVhZGVyJyAgQU5EIHR5cGUgPSAnbG9jYWwnIA== HTTP/1.1" 200 1359 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.012007    
+2023-07-09T12:45:15.976667Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.266ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'message_box'
+  AND path_code = 'message_box'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.977774Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.978621Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ21lc3NhZ2VfYm94JyAgQU5EIHBhdGhfY29kZSA9ICdtZXNzYWdlX2JveCcgIEFORCB0eXBlID0gJ2xvY2FsJyA= HTTP/1.1" 200 1357 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.013469    
+2023-07-09T12:45:15.985601Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 1.726ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'chart_header'
+  AND path_code = 'chart_header'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.988062Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.989853Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ2NoYXJ0X2hlYWRlcicgIEFORCBwYXRoX2NvZGUgPSAnY2hhcnRfaGVhZGVyJyAgQU5EIHR5cGUgPSAnbG9jYWwnIA== HTTP/1.1" 200 1359 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.016203    
+2023-07-09T12:45:15.994664Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 1.644ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'message_box'
+  AND path_code = 'message_box'
+  AND type = 'local'
+  
+2023-07-09T12:45:15.995763Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:15.996898Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ21lc3NhZ2VfYm94JyAgQU5EIHBhdGhfY29kZSA9ICdtZXNzYWdlX2JveCcgIEFORCB0eXBlID0gJ2xvY2FsJyA= HTTP/1.1" 200 1357 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.014974    
+2023-07-09T12:45:17.868714Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.847s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:17.900733Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:17.912884Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzI4NicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 23438 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 1.917574    
+2023-07-09T12:45:17.939768Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 6.530ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:45:20.011780Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 2.089s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:20.041593Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:20.061261Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDEwMCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 26283 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.062159    
+2023-07-09T12:45:20.068386Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.692ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url = 'message_box'
+  AND path_code = 'message_box'
+  AND type = 'local'
+  
+2023-07-09T12:45:20.074019Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:20.086188Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsID0gJ21lc3NhZ2VfYm94JyAgQU5EIHBhdGhfY29kZSA9ICdtZXNzYWdlX2JveCcgIEFORCB0eXBlID0gJ2xvY2FsJyA= HTTP/1.1" 200 1357 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.088450    
+2023-07-09T12:45:20.097458Z  INFO sqlx::query: SELECT * FROM saved_search_result …; rows affected: 0, rows returned: 1, elapsed: 2.429ms
+
+SELECT
+  *
+FROM
+  saved_search_result
+WHERE
+  saved_result_code = 'INV_ONHAND_TOTAL_V__1637781298751'
+  
+2023-07-09T12:45:20.099690Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:20.101735Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0ICBXSEVSRSBzYXZlZF9yZXN1bHRfY29kZSA9ICdJTlZfT05IQU5EX1RPVEFMX1ZfXzE2Mzc3ODEyOTg3NTEnIA== HTTP/1.1" 200 8270 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.099293    
+2023-07-09T12:45:21.725332Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.620s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:21.747135Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:21.767243Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzI4NicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 23438 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.837970    
+2023-07-09T12:45:21.784263Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 979.700µs
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:21.784923Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:21.785272Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.854917    
+2023-07-09T12:45:21.789412Z  INFO sqlx::query: SELECT * FROM navigation_group …; rows affected: 0, rows returned: 20, elapsed: 1.707ms
+
+SELECT
+  *
+FROM
+  navigation_group
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:21.805578Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:21.809112Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/NavigationGroup HTTP/1.1" 200 2414 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.880783    
+2023-07-09T12:45:21.921572Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 102.320ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Local'
+  AND parent_path_code = 'chart_header'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'chart_header'
+  
+2023-07-09T12:45:21.923984Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:21.925792Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0xvY2FsJyAgIEFORCBwYXJlbnRfcGF0aF9jb2RlID0gJ2NoYXJ0X2hlYWRlcicgQU5EIHBhcmVudF9wYXRoX3VybCAhPSBwYXRoX3VybCAgQU5EIHBhcmVudF9wYXRoX3VybCA9ICdjaGFydF9oZWFkZXIn HTTP/1.1" 200 1393 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 1.856593    
+2023-07-09T12:45:24.144167Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 2.212s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:24.181928Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:24.201778Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDEwMCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 26283 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.102063    
+2023-07-09T12:45:24.311098Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 102.037ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Local'
+  AND parent_path_code = 'message_box'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'message_box'
+  
+2023-07-09T12:45:24.312513Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:24.318194Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0xvY2FsJyAgIEFORCBwYXJlbnRfcGF0aF9jb2RlID0gJ21lc3NhZ2VfYm94JyBBTkQgcGFyZW50X3BhdGhfdXJsICE9IHBhdGhfdXJsICBBTkQgcGFyZW50X3BhdGhfdXJsID0gJ21lc3NhZ2VfYm94Jw== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.209366    
+2023-07-09T12:45:24.331185Z  INFO sqlx::query: SELECT * FROM saved_search_result …; rows affected: 0, rows returned: 1, elapsed: 6.922ms
+
+SELECT
+  *
+FROM
+  saved_search_result
+WHERE
+  saved_result_code = 'INV_ONHAND_SUMMARY_V__1637781325372'
+  
+2023-07-09T12:45:24.332609Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:24.335633Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0ICBXSEVSRSBzYXZlZF9yZXN1bHRfY29kZSA9ICdJTlZfT05IQU5EX1NVTU1BUllfVl9fMTYzNzc4MTMyNTM3Micg HTTP/1.1" 200 5909 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.551499    
+2023-07-09T12:45:26.597911Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 2.244s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:26.643813Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:26.675930Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzI4NicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 23438 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.874861    
+2023-07-09T12:45:26.691215Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 1.482ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T12:45:26.692875Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:26.694882Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.878335    
+2023-07-09T12:45:26.810283Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 66, elapsed: 96.949ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  module_name = 'PO'
+  AND (
+    default_trnx IS NULL
+    OR default_trnx = 'null'
+    OR default_trnx = ''
+  )
+  AND (
+    path_url = parent_path_url
+    OR (
+      sequence IS NOT NULL
+      AND sequence != '9999'
+      AND sequence != '0'
+    )
+  )
+  AND (
+    application_code = 'Inoerp'
+    OR application_code = 'Local'
+  )
+Order By
+  navigation_group ASC
+  
+2023-07-09T12:45:26.921342Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:26.989311Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCAqIGZyb20gbWVudV9wYXRoIFdIRVJFICBtb2R1bGVfbmFtZSA9J1BPJyBBTkQgKGRlZmF1bHRfdHJueCBJUyBOVUxMIE9SIGRlZmF1bHRfdHJueCA9J251bGwnIE9SIGRlZmF1bHRfdHJueCA9JycpICAgIEFORCAocGF0aF91cmwgPSBwYXJlbnRfcGF0aF91cmwgT1IgKHNlcXVlbmNlIElTIE5PVCBOVUxMIEFORCBzZXF1ZW5jZSAhPSAnOTk5OScgQU5EIHNlcXVlbmNlICE9ICcwJykpICBBTkQgKCBhcHBsaWNhdGlvbl9jb2RlID0gJ0lub2VycCcgT1IgYXBwbGljYXRpb25fY29kZSA9ICdMb2NhbCcgKSBPcmRlciBCeSBuYXZpZ2F0aW9uX2dyb3VwIEFTQyA= HTTP/1.1" 200 95146 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 5.057823    
+2023-07-09T12:45:27.088952Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 86.544ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Local'
+  AND parent_path_code = 'chart_header'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'chart_header'
+  
+2023-07-09T12:45:27.090999Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:27.091842Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0xvY2FsJyAgIEFORCBwYXJlbnRfcGF0aF9jb2RlID0gJ2NoYXJ0X2hlYWRlcicgQU5EIHBhcmVudF9wYXRoX3VybCAhPSBwYXRoX3VybCAgQU5EIHBhcmVudF9wYXRoX3VybCA9ICdjaGFydF9oZWFkZXIn HTTP/1.1" 200 1393 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.873908    
+2023-07-09T12:45:28.810128Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 6, elapsed: 1.709s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33306'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:28.816606Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:28.827557Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzMwNicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 6282 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.461208    
+2023-07-09T12:45:30.523129Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 1.690s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:30.543449Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:30.560262Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDEwMCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 26283 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 6.192744    
+2023-07-09T12:45:30.652968Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 83.205ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Local'
+  AND parent_path_code = 'message_box'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'message_box'
+  
+2023-07-09T12:45:30.653771Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:30.654405Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0xvY2FsJyAgIEFORCBwYXJlbnRfcGF0aF9jb2RlID0gJ21lc3NhZ2VfYm94JyBBTkQgcGFyZW50X3BhdGhfdXJsICE9IHBhdGhfdXJsICBBTkQgcGFyZW50X3BhdGhfdXJsID0gJ21lc3NhZ2VfYm94Jw== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.967744    
+2023-07-09T12:45:30.765359Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 106.107ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%InvOnhandSummaryV%'
+  AND path_code LIKE '%InvOnhandSummaryV%'
+  
+2023-07-09T12:45:30.766901Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:30.768302Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVJbnZPbmhhbmRTdW1tYXJ5ViUnICBBTkQgcGF0aF9jb2RlIExJS0UgJyVJbnZPbmhhbmRTdW1tYXJ5ViUnIA== HTTP/1.1" 200 1400 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.052297    
+2023-07-09T12:45:30.773325Z  INFO sqlx::query: SELECT * FROM saved_search_result …; rows affected: 0, rows returned: 1, elapsed: 1.255ms
+
+SELECT
+  *
+FROM
+  saved_search_result
+WHERE
+  saved_result_code = 'INV_ONHAND_TRANSACTION_V__1637781340236'
+  
+2023-07-09T12:45:30.774608Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:30.776757Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0ICBXSEVSRSBzYXZlZF9yZXN1bHRfY29kZSA9ICdJTlZfT05IQU5EX1RSQU5TQUNUSU9OX1ZfXzE2Mzc3ODEzNDAyMzYnIA== HTTP/1.1" 200 3192 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.756703    
+2023-07-09T12:45:32.301517Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 22, elapsed: 1.517s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33286'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:32.356765Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:32.377241Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzI4NicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 23438 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 5.270897    
+2023-07-09T12:45:32.479235Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 3, elapsed: 97.409ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%SdOpenSalesOrdersV%'
+  
+2023-07-09T12:45:32.482868Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:32.485856Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVTZE9wZW5TYWxlc09yZGVyc1YlJyA= HTTP/1.1" 200 4302 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.624224    
+2023-07-09T12:45:32.504739Z  INFO sqlx::query: SELECT * from chart_header …; rows affected: 0, rows returned: 0, elapsed: 5.360ms
+
+SELECT
+  *
+from
+  chart_header
+WHERE
+  application_code = 'Inoerp'
+  and (
+    module_name = 'PO'
+    OR show_in_all_navigators = '1'
+    OR show_in_all_navigators = 'true'
+  )
+  and (
+    show_in_navigator = '1'
+    OR show_in_navigator = 'true'
+    OR show_in_all_navigators = '1'
+    OR show_in_all_navigators = 'true'
+  )
+ORDER BY
+  sequence desc
+  
+2023-07-09T12:45:32.505936Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:32.506647Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogZnJvbSBjaGFydF9oZWFkZXIgV0hFUkUgIGFwcGxpY2F0aW9uX2NvZGUgPSAnSW5vZXJwJyAgYW5kIChtb2R1bGVfbmFtZSA9ICdQTycgIE9SIHNob3dfaW5fYWxsX25hdmlnYXRvcnMgPSAnMScgT1Igc2hvd19pbl9hbGxfbmF2aWdhdG9ycz0gJ3RydWUnICkgIGFuZCAoc2hvd19pbl9uYXZpZ2F0b3IgPSAnMScgT1Igc2hvd19pbl9uYXZpZ2F0b3IgPSAndHJ1ZScgIE9SIHNob3dfaW5fYWxsX25hdmlnYXRvcnMgPSAnMScgT1Igc2hvd19pbl9hbGxfbmF2aWdhdG9ycz0gJ3RydWUnICApICBPUkRFUiBCWSBzZXF1ZW5jZSBkZXNjIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 1.939881    
+2023-07-09T12:45:33.838813Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 6, elapsed: 1.326s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33306'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:33.845222Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:33.849273Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzMwNicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 6282 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.189784    
+2023-07-09T12:45:33.865539Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 6.857ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:45:33.953497Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 100.976ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%InvOnhandSummaryV%'
+  
+2023-07-09T12:45:33.955375Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:33.956981Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVJbnZPbmhhbmRTdW1tYXJ5ViUnIA== HTTP/1.1" 200 1400 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.182168    
+2023-07-09T12:45:35.469618Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 25, elapsed: 1.507s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34100'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:35.482859Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:35.494269Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDEwMCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 26283 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.710670    
+2023-07-09T12:45:35.518036Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 7.476ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:45:35.590587Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 0, elapsed: 88.945ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Local'
+  AND parent_path_code = 'message_box'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'message_box'
+  
+2023-07-09T12:45:35.591212Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:35.591800Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0xvY2FsJyAgIEFORCBwYXJlbnRfcGF0aF9jb2RlID0gJ21lc3NhZ2VfYm94JyBBTkQgcGFyZW50X3BhdGhfdXJsICE9IHBhdGhfdXJsICBBTkQgcGFyZW50X3BhdGhfdXJsID0gJ21lc3NhZ2VfYm94Jw== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.206459    
+2023-07-09T12:45:35.606090Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.093ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:35.612937Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 3, elapsed: 88.963ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND parent_path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:35.710386Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 8, elapsed: 115.359ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%PoPendingDeliveryV%'
+  AND path_code LIKE '%PoPendingDeliveryV%'
+  
+2023-07-09T12:45:35.716435Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:35.717611Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 2, elapsed: 106.234ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND parent_path_code = ?
+  
+2023-07-09T12:45:35.720990Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVQb1BlbmRpbmdEZWxpdmVyeVYlJyAgQU5EIHBhdGhfY29kZSBMSUtFICclUG9QZW5kaW5nRGVsaXZlcnlWJScg HTTP/1.1" 200 11842 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.219950    
+2023-07-09T12:45:37.344954Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 4, elapsed: 1.727s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:37.499092Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 11, elapsed: 1.773s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '31828'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:37.509328Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:37.522225Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMTgyOCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 14390 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.990486    
+2023-07-09T12:45:37.535728Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 1, elapsed: 1.482ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  1 = 1
+  AND id = '33341'
+limit
+  20 offset 0
+  
+2023-07-09T12:45:37.548490Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:37.550245Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/MenuPath(id=33341) HTTP/1.1" 200 1323 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.695643    
+2023-07-09T12:45:37.612480Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 11, elapsed: 1.892s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:37.628569Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 3, elapsed: 74.976ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%SdOpenSalesOrdersV%'
+  
+2023-07-09T12:45:37.632112Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:37.634279Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVTZE9wZW5TYWxlc09yZGVyc1YlJyA= HTTP/1.1" 200 4302 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.672570    
+2023-07-09T12:45:38.958633Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 65, elapsed: 1.319s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34292'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:39.004839Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:39.034038Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDI5MicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 74102 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.305051    
+2023-07-09T12:45:39.100448Z  INFO sqlx::query: SELECT * FROM sd_open_sales_orders_v …; rows affected: 0, rows returned: 3, elapsed: 62.786ms
+
+SELECT
+  *
+FROM
+  sd_open_sales_orders_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:39.198955Z  INFO sqlx::query: SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …; rows affected: 0, rows returned: 0, elapsed: 4.008ms
+
+SET
+  sql_mode =(
+    SELECT
+      CONCAT(
+        @ @sql_mode,
+        ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION'
+      )
+  ),
+  time_zone = '+00:00',
+  NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
+  
+2023-07-09T12:45:39.231078Z  INFO sqlx::query: SELECT * FROM sys_action_ev …; rows affected: 0, rows returned: 0, elapsed: 25.232ms
+
+SELECT
+  *
+FROM
+  sys_action_ev
+where
+  1 = 1
+  AND vv_path_url = 'SdOpenSalesOrdersV'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:45:39.231951Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:39.235532Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/SdOpenSalesOrdersV HTTP/1.1" 200 483 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.737688    
+2023-07-09T12:45:41.258390Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 40, elapsed: 2.019s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34297'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:41.309371Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:41.350639Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDI5NycgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 46427 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 3.799383    
+2023-07-09T12:45:43.385391Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 32, elapsed: 2.024s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '33341'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:43.431560Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:43.452919Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczMzM0MScgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 38219 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 5.879352    
+2023-07-09T12:45:43.513819Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 3.823ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:43.602853Z  INFO sqlx::query: SELECT * FROM inv_onhand_summary_v …; rows affected: 0, rows returned: 18, elapsed: 141.880ms
+
+SELECT
+  *
+FROM
+  inv_onhand_summary_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:43.630143Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 8, elapsed: 101.751ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND parent_path_code = ?
+  AND application_code = ?
+  
+2023-07-09T12:45:43.637113Z  INFO sqlx::query: SELECT * FROM sys_action_ev …; rows affected: 0, rows returned: 0, elapsed: 15.413ms
+
+SELECT
+  *
+FROM
+  sys_action_ev
+where
+  1 = 1
+  AND vv_path_url = 'InvOnhandSummaryV'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:45:43.643568Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:43.651676Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/InvOnhandSummaryV HTTP/1.1" 200 5005 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 8.056687    
+2023-07-09T12:45:43.820407Z  INFO sqlx::query: SELECT * FROM menu_path …; rows affected: 0, rows returned: 3, elapsed: 165.821ms
+
+SELECT
+  *
+FROM
+  menu_path
+WHERE
+  path_url LIKE '%SdOpenSalesOrdersV%'
+  
+2023-07-09T12:45:43.829329Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:43.834053Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBtZW51X3BhdGggIFdIRVJFIHBhdGhfdXJsIExJS0UgJyVTZE9wZW5TYWxlc09yZGVyc1YlJyA= HTTP/1.1" 200 4302 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 6.194781    
+2023-07-09T12:45:44.028909Z  INFO sqlx::query: select * from menu_path …; rows affected: 0, rows returned: 2, elapsed: 182.740ms
+
+select
+  *
+from
+  menu_path
+where
+  application_code = 'Inoerp'
+  AND parent_path_code = 'PoHeaderEv'
+  AND parent_path_url != path_url
+  AND parent_path_url = 'PoHeaderEv'
+  
+2023-07-09T12:45:44.033354Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.034887Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IHNlbGVjdCAqIGZyb20gbWVudV9wYXRoICB3aGVyZSBhcHBsaWNhdGlvbl9jb2RlID0gJ0lub2VycCcgICBBTkQgcGFyZW50X3BhdGhfY29kZSA9ICdQb0hlYWRlckV2JyBBTkQgcGFyZW50X3BhdGhfdXJsICE9IHBhdGhfdXJsICBBTkQgcGFyZW50X3BhdGhfdXJsID0gJ1BvSGVhZGVyRXYn HTTP/1.1" 200 2857 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.928585    
+2023-07-09T12:45:44.067726Z  INFO sqlx::query: SELECT * FROM sd_open_sales_orders_v …; rows affected: 0, rows returned: 3, elapsed: 22.044ms
+
+SELECT
+  *
+FROM
+  sd_open_sales_orders_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:44.069458Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.077188Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/SdOpenSalesOrdersV HTTP/1.1" 200 483 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 4.807486    
+2023-07-09T12:45:44.083108Z  INFO sqlx::query: SELECT * FROM chart_field …; rows affected: 0, rows returned: 3, elapsed: 2.689ms
+
+SELECT
+  *
+FROM
+  chart_field
+WHERE
+  chart_header_id LIKE '%11%'
+  
+2023-07-09T12:45:44.084595Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.085144Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9maWVsZCAgV0hFUkUgY2hhcnRfaGVhZGVyX2lkIExJS0UgJyUxMSUnIA== HTTP/1.1" 200 334 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.718890    
+2023-07-09T12:45:44.145237Z  INFO sqlx::query: SELECT * FROM inv_onhand_summary_v …; rows affected: 0, rows returned: 18, elapsed: 45.157ms
+
+SELECT
+  *
+FROM
+  inv_onhand_summary_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:44.154377Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.162299Z  INFO sqlx::query: SELECT * FROM chart_field …; rows affected: 0, rows returned: 2, elapsed: 771.900µs
+
+SELECT
+  *
+FROM
+  chart_field
+WHERE
+  chart_header_id LIKE '%17%'
+  
+2023-07-09T12:45:44.162310Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/InvOnhandSummaryV HTTP/1.1" 200 5005 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.444994    
+2023-07-09T12:45:44.162856Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.163269Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9maWVsZCAgV0hFUkUgY2hhcnRfaGVhZGVyX2lkIExJS0UgJyUxNyUnIA== HTTP/1.1" 200 215 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.301528    
+2023-07-09T12:45:44.165584Z  INFO sqlx::query: SELECT * FROM chart_field …; rows affected: 0, rows returned: 3, elapsed: 717.600µs
+
+SELECT
+  *
+FROM
+  chart_field
+WHERE
+  chart_header_id LIKE '%12%'
+  
+2023-07-09T12:45:44.166177Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:44.166952Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9maWVsZCAgV0hFUkUgY2hhcnRfaGVhZGVyX2lkIExJS0UgJyUxMiUnIA== HTTP/1.1" 200 334 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.116021    
+2023-07-09T12:45:45.875923Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 40, elapsed: 2.240s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:45:46.196880Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 2.025s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34408'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:46.271692Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:46.334865Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDQwOCcgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 62842 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.251595    
+2023-07-09T12:45:46.346609Z  INFO sqlx::query: SELECT * FROM chart_field …; rows affected: 0, rows returned: 3, elapsed: 1.477ms
+
+SELECT
+  *
+FROM
+  chart_field
+WHERE
+  chart_header_id LIKE '%13%'
+  
+2023-07-09T12:45:46.347656Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:46.348432Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSBjaGFydF9maWVsZCAgV0hFUkUgY2hhcnRfaGVhZGVyX2lkIExJS0UgJyUxMyUnIA== HTTP/1.1" 200 334 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 2.206937    
+2023-07-09T12:45:53.920329Z  WARN sqlx::query: SELECT * FROM po_pending_delivery_v …; rows affected: 0, rows returned: 2, elapsed: 7.507s
+
+SELECT
+  *
+FROM
+  po_pending_delivery_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:45:53.938310Z  INFO sqlx::query: SELECT * FROM sys_action_ev …; rows affected: 0, rows returned: 0, elapsed: 7.826ms
+
+SELECT
+  *
+FROM
+  sys_action_ev
+where
+  1 = 1
+  AND vv_path_url = 'PoPendingDeliveryV'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:45:53.940841Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:53.946463Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoPendingDeliveryV HTTP/1.1" 200 2106 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 10.448387    
+2023-07-09T12:45:57.119233Z  WARN sqlx::query: SELECT * FROM menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 3.172s
+
+SELECT
+  *
+FROM
+  menu_form_field
+where
+  menu_path_id = '34506'
+ORDER BY
+  CAST(sequence AS INTEGER) ASC
+  
+2023-07-09T12:45:57.200302Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:45:57.238733Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=U0VMRUNUICogRlJPTSAgbWVudV9mb3JtX2ZpZWxkIHdoZXJlIG1lbnVfcGF0aF9pZCA9ICczNDUwNicgIE9SREVSIEJZIENBU1Qoc2VxdWVuY2UgQVMgSU5URUdFUikgIEFTQyA= HTTP/1.1" 200 64362 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 10.689727    

@@ -1,0 +1,192 @@
+2023-07-09T12:48:31.837523Z  INFO sqlx::query: SELECT * from rd_sec_user …; rows affected: 0, rows returned: 1, elapsed: 1.027ms
+
+SELECT
+  *
+from
+  rd_sec_user
+WHERE
+  1 = 1
+  AND username = ?
+  
+2023-07-09T12:48:33.668844Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 2, elapsed: 2.792ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'org_code_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:48:33.676420Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 4, elapsed: 5.526ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'bu_access_group_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:48:33.676884Z  INFO sqlx::query: SELECT lol.lov_value, lol.value_code FROM …; rows affected: 0, rows returned: 2, elapsed: 1.047ms
+
+SELECT
+  lol.lov_value,
+  lol.value_code
+FROM
+  rd_sys_lov_lines lol,
+  rd_sec_user user
+WHERE
+  1 = 1
+  AND lol.lov_code = user.'inv_access_group_lov'
+  AND user.id = '2'
+ORDER BY
+  lol.seq ASC
+  
+2023-07-09T12:48:33.752287Z  INFO sqlx::query: SELECT ra.obj_class_name, ra.access_level FROM …; rows affected: 0, rows returned: 4566, elapsed: 78.020ms
+
+SELECT
+  ra.obj_class_name,
+  ra.access_level
+FROM
+  rd_sec_role_access ra
+WHERE
+  ra.role_code = 'USER'
+UNION
+SELECT
+  ra.obj_class_name,
+  ra.access_level
+FROM
+  rd_sec_user_role ur,
+  rd_sec_role_access ra
+WHERE
+  1 = 1
+  AND (ur.role_code = ra.role_code)
+  AND ur.user_id = '2'
+  
+2023-07-09T12:48:34.043595Z  INFO actix_web::middleware::logger: ::1 "POST /auth/login HTTP/1.1" 200 141673 "-" "Dart/3.0 (dart:io)" 2.216701    
+2023-07-09T12:48:35.300673Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/InvOnhandSummaryV HTTP/1.1" 401 90 "-" "Dart/3.0 (dart:io)" 0.028326    
+2023-07-09T12:48:35.323838Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/SdOpenSalesOrdersV HTTP/1.1" 401 90 "-" "Dart/3.0 (dart:io)" 0.001528    
+2023-07-09T12:48:35.312293Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/SdOpenSalesOrdersV HTTP/1.1" 401 90 "-" "Dart/3.0 (dart:io)" 0.001963    
+2023-07-09T12:48:35.413818Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/SdOpenSalesOrdersV HTTP/1.1" 401 90 "-" "Dart/3.0 (dart:io)" 0.002069    
+2023-07-09T12:48:40.271467Z  INFO sqlx::query: SELECT * FROM inv_onhand_summary_v …; rows affected: 0, rows returned: 18, elapsed: 6.376ms
+
+SELECT
+  *
+FROM
+  inv_onhand_summary_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:48:40.284474Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:48:40.293219Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/InvOnhandSummaryV HTTP/1.1" 200 5005 "-" "Dart/3.0 (dart:io)" 0.037479    
+2023-07-09T12:48:45.617410Z  WARN sqlx::query: SELECT * FROM po_pending_delivery_v …; rows affected: 0, rows returned: 2, elapsed: 4.735s
+
+SELECT
+  *
+FROM
+  po_pending_delivery_v
+WHERE
+  1 = 1
+limit
+  20 offset 0
+  
+2023-07-09T12:48:45.626260Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:48:45.634170Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoPendingDeliveryV HTTP/1.1" 200 2106 "-" "Dart/3.0 (dart:io)" 4.760796    
+2023-07-09T12:48:48.421123Z  INFO sqlx::query: SELECT * FROM po_header_ev …; rows affected: 0, rows returned: 10, elapsed: 36.251ms
+
+SELECT
+  *
+FROM
+  po_header_ev
+WHERE
+  1 = 1
+limit
+  10 offset 0
+  
+2023-07-09T12:48:48.480773Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:48:48.528213Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoHeaderEv?&limit=10 HTTP/1.1" 200 53824 "-" "Dart/3.0 (dart:io)" 0.153601    
+2023-07-09T12:48:51.839250Z  INFO sqlx::query: SELECT * FROM po_header_ev …; rows affected: 0, rows returned: 1, elapsed: 32.860ms
+
+SELECT
+  *
+FROM
+  po_header_ev
+WHERE
+  1 = 1
+  AND po_header_id = '64'
+limit
+  20 offset 0
+  
+2023-07-09T12:48:51.844484Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:48:51.857495Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoHeaderEv(poHeaderId=64) HTTP/1.1" 200 5470 "-" "Dart/3.0 (dart:io)" 0.090647    
+2023-07-09T12:48:55.712045Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 1, elapsed: 2.262ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND path_code = ?
+  
+2023-07-09T12:48:55.802751Z  INFO sqlx::query: SELECT * from menu_path …; rows affected: 0, rows returned: 2, elapsed: 85.327ms
+
+SELECT
+  *
+from
+  menu_path
+WHERE
+  1 = 1
+  AND application_code = ?
+  AND parent_path_code = ?
+  
+2023-07-09T12:48:57.512430Z  WARN sqlx::query: SELECT * from menu_form_field …; rows affected: 0, rows returned: 54, elapsed: 1.699s
+
+SELECT
+  *
+from
+  menu_form_field
+WHERE
+  1 = 1
+  AND menu_path_id = ?
+  
+2023-07-09T12:48:57.546295Z  INFO sqlx::query: SELECT * FROM po_line_ev …; rows affected: 0, rows returned: 9, elapsed: 21.434ms
+
+SELECT
+  *
+FROM
+  po_line_ev
+WHERE
+  1 = 1
+  AND po_header_id = '64'
+limit
+  20 offset 0
+  
+2023-07-09T12:48:57.584200Z  INFO sqlx::query: SELECT * FROM sys_action_ev …; rows affected: 0, rows returned: 0, elapsed: 15.406ms
+
+SELECT
+  *
+FROM
+  sys_action_ev
+where
+  1 = 1
+  AND vv_path_url = 'PoLineEv'
+ORDER BY
+  sequence ASC
+  
+2023-07-09T12:48:57.606101Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T12:48:57.627084Z  INFO actix_web::middleware::logger: ::1 "GET /api/ierp/PoLineEv(poHeaderId=64)?limit=1000 HTTP/1.1" 200 24810 "-" "Dart/3.0 (dart:io)" 1.926539    

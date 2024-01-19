@@ -1,0 +1,71 @@
+use chrono::{DateTime, Utc, NaiveDateTime};
+use serde::{Serialize, Deserialize};
+use crate::app::system::error::no_value::NoValueFoundError;
+use crate::db::{model::db_conn_map::DbConnMapping, select::Select};
+
+{{struct_definition}}
+
+
+impl {{struct_name}} {
+    pub async fn find_all(
+        conn_mapping: &DbConnMapping,
+    ) -> Result<Vec<{{struct_name}}>, NoValueFoundError> {
+        let sql = "SELECT * from {{table_name}}";
+        let rows = Select::new(conn_mapping).select(sql, &vec![]).await?;
+        let {{table_name}}s: Result<Vec<{{struct_name}}>, _> =
+            rows.into_iter().map(|row| Self::get_entity(row)).collect();
+        {{table_name}}s
+    }
+
+    pub async fn find_by_id(
+        conn_mapping: &DbConnMapping,
+        id: &str,
+    ) -> Result<{{struct_name}}, NoValueFoundError> {
+        let sql = format!(
+            "SELECT * from {{table_name}} where {{table_name}}_id ='{}' ",
+            id
+        );
+        let data = Select::new(conn_mapping)
+            .select(sql.as_str(), &vec![])
+            .await?;
+        let row = data
+        .first()
+        .ok_or_else(|| NoValueFoundError::new("Unable to fetch first row"))?
+        .to_owned();
+        let entity: Result<{{struct_name}}, NoValueFoundError> = Self::get_entity(row);
+        entity
+    }
+
+    pub async fn find_by_sql(
+        conn_mapping: &DbConnMapping,
+        sql: &str,
+        params: &Vec<String>,
+    ) -> Result<Vec<{{struct_name}}>, NoValueFoundError> {
+        let rows = Select::new(conn_mapping).select(sql, params).await?;
+        let {{table_name}}s: Result<Vec<{{struct_name}}>, _> =
+            rows.into_iter().map(|row| Self::get_entity(row)).collect();
+        {{table_name}}s
+    }
+
+    {{entity_definition}}
+
+}
+
+
+mod tests {
+    use crate::{
+        app::{cache::global_cache::GlobalCache, system::error::no_value::NoValueFoundError},
+        model::{entity::action::{{table_name}}::{{struct_name}}, state::global_state::GlobalState}, startup,
+    };
+
+    #[tokio::test]
+    async fn test_find_all() {
+        startup::init().await.expect("Unable to init");
+        let gs: GlobalState = GlobalCache::get_global_state().expect("Unable to find gs");
+        let pools1 = gs.conn_pools.lock().await;
+        let conn = pools1.get("ierp").expect("Unable to find dbConnMap");
+        let all_data = {{struct_name}}::find_all(conn).await.expect("Unable to find result");
+
+        log::info!("all data {:?}", all_data);
+    }
+}

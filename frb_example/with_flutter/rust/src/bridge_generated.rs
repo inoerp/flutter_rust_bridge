@@ -61,6 +61,26 @@ fn wire_passing_complex_structs_impl(
         },
     )
 }
+fn wire_simple_text_message_impl(port_: MessagePort) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "simple_text_message",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || move |task_callback| Ok(simple_text_message()),
+    )
+}
+fn wire_start_server_impl(port_: MessagePort) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "start_server",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || move |task_callback| Ok(start_server()),
+    )
+}
 fn wire_returning_structs_with_boxed_fields_impl(port_: MessagePort) {
     FLUTTER_RUST_BRIDGE_HANDLER.wrap(
         WrapInfo {
@@ -355,13 +375,6 @@ impl support::IntoDartExceptPrimitive for UserId {}
 support::lazy_static! {
     pub static ref FLUTTER_RUST_BRIDGE_HANDLER: support::DefaultHandler = Default::default();
 }
-
-/// cbindgen:ignore
-#[cfg(target_family = "wasm")]
-#[path = "bridge_generated.web.rs"]
-mod web;
-#[cfg(target_family = "wasm")]
-pub use web::*;
 
 #[cfg(not(target_family = "wasm"))]
 #[path = "bridge_generated.io.rs"]

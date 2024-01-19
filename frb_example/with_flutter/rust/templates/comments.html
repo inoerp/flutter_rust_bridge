@@ -1,0 +1,89 @@
+{% extends "base.html" %} 
+{% block title %} 
+{{site_info.site_name}} |
+{{site_info.description1}} 
+{% endblock %} 
+{% block logo %}
+<a class="navbar-brand" href="index.html"
+  ><span class="logo-text"
+    >{{site_info.site_name}} <span class="text-alt"></span></span
+></a>
+{% endblock %} 
+{% block hlinks %}
+<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+  <li class="list-inline-item">
+    <a href="{{site_info.youtube_link}}">
+      <i class="fab fa-youtube fa-fw"></i
+    ></a>
+  </li>
+  <li class="list-inline-item">
+    <a href="{{site_info.twitter_link}}"
+      ><i class="fab fa-twitter fa-fw"></i
+    ></a>
+  </li>
+</ul>
+<!--//social-list-->
+<a href="{{site_info.video_link}}" class="btn btn-primary d-none d-lg-flex"
+  >Videos</a
+>
+{% endblock %}
+{% block header %}
+{% endblock %} 
+
+{% block content %}
+<main id="main">
+  <section>
+
+    <div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+		  <div class="top-search-box d-lg-none p-3">
+			<form class="search-form">
+			  <input
+				type="text"
+				placeholder="Search the docs..."
+				name="search"
+				class="form-control search-input"
+			  />
+			  <button type="submit" class="btn search-btn" value="Search">
+				<i class="fas fa-search"></i>
+			  </button>
+			</form>
+		  </div>
+		  <nav id="docs-nav" class="docs-nav navbar">
+			<ul class="section-items list-unstyled nav flex-column pb-3">
+			  {% for row in data %}
+			  <li class="nav-item">
+				<a class="nav-link scrollto" href="#item-{{row.comment_id}}">{{row.subject}}</a>
+			  </li>
+			  {% endfor %}
+			</ul>
+		  </nav>
+		  <!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+		  <div class="container">
+			{% for row in data %}
+			<article class="docs-article" id="section-{{row.comment_id}}">
+				{% if loop.first %}
+				<section class="docs-section conent-section" id="conent-{{row.content_id}}">
+					<h2 class="section-heading">{{row.title}}</h2>
+					<p>{{row.body|safe}}</p>
+				  </section>
+				{% endif %}
+			  <section class="docs-section" id="item-{{row.comment_id}}">
+				<h2 class="section-heading">{{row.subject}}</h2>
+				<p>{{row.comment|safe}}</p>
+			  </section>
+			  <!--//section-->
+			</article>
+			<!--//docs-article-->
+			{% endfor %}
+		  </div>
+		</div>
+	  </div>
+	  <!--//docs-wrapper-->
+  
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,21 @@
+struct SysAction {sys_action_id
+src_entity_name
+src_entity_id
+action_code
+sequence
+next_action_code
+action_name
+action_type
+description
+class_name
+method_name
+next_line_seq_pass
+next_line_seq_fail
+next_line_seq_onhold
+activity_path
+created_by
+creation_date
+last_updated_by
+last_update_date
+
+}

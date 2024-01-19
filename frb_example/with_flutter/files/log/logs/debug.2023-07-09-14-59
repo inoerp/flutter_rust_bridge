@@ -1,0 +1,140 @@
+2023-07-09T14:59:28.390028Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 146.300µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:28.406245Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 7.426ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:28.406868Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:28.407663Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.026239    
+2023-07-09T14:59:28.681117Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 103.200µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:28.698461Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 8.830ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:28.698957Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:28.699240Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.028666    
+2023-07-09T14:59:28.968657Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 95.700µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:28.985829Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 11.274ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:28.986335Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:28.986736Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.063610    
+2023-07-09T14:59:29.196747Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 115.200µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:29.220832Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 13.884ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:29.221369Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:29.221697Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.089081    
+2023-07-09T14:59:29.340916Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 133.800µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:29.355161Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 8.538ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:29.355701Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:29.356012Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.058053    
+2023-07-09T14:59:29.429047Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 76.000µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:29.443909Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 8.719ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:29.444649Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:29.444973Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.037952    
+2023-07-09T14:59:29.479983Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 148.000µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T14:59:29.498685Z  INFO sqlx::query: SELECT ssr.* FROM saved_search_result …; rows affected: 0, rows returned: 0, elapsed: 12.933ms
+
+SELECT
+  ssr.*
+FROM
+  saved_search_result ssr,
+  menu_path menu
+WHERE
+  menu.id = ssr.menu_path_id
+  AND (
+    ssr.show_in_notification = '1'
+    OR ssr.show_in_notification = 'true'
+  )
+  
+2023-07-09T14:59:29.499197Z  INFO flutter_rust_bridge_example::app::js::validation: Js Object is None    
+2023-07-09T14:59:29.499559Z  INFO actix_web::middleware::logger: ::1 "GET /api/config/QueryBySql?q=sql=IFNFTEVDVCBzc3IuKiAgRlJPTSBzYXZlZF9zZWFyY2hfcmVzdWx0IHNzciwgICAgICBtZW51X3BhdGggbWVudSAgICAgIFdIRVJFIG1lbnUuaWQgPSBzc3IubWVudV9wYXRoX2lkICAgICAgQU5EIChzc3Iuc2hvd19pbl9ub3RpZmljYXRpb24gPSAnMScgIE9SIHNzci5zaG93X2luX25vdGlmaWNhdGlvbiA9ICd0cnVlJyApICAgIA== HTTP/1.1" 200 2 "http://localhost:3030/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" 0.029740    

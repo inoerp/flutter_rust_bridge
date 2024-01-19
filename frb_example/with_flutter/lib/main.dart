@@ -32,19 +32,27 @@ class _MyAppState extends State<MyApp> {
   }
 
   @override
-  Widget build(BuildContext context) => buildPageUi(
-        exampleImage,
-        exampleText,
-      );
+  Widget build(BuildContext context) =>
+      buildPageUi(exampleImage, exampleText, initServer);
 
   Future<void> _callExampleFfiOne() async {
     final receivedImage = await api.drawMandelbrot(
-        imageSize: const Size(width: 50, height: 50), zoomPoint: examplePoint, scale: generateScale(), numThreads: 4);
+        imageSize: const Size(width: 50, height: 50),
+        zoomPoint: examplePoint,
+        scale: generateScale(),
+        numThreads: 4);
     if (mounted) setState(() => exampleImage = receivedImage);
   }
 
   Future<void> _callExampleFfiTwo() async {
-    final receivedText = await api.passingComplexStructs(root: createExampleTree());
-    if (mounted) setState(() => exampleText = receivedText);
+    final newText = await api.simpleTextMessage();
+    final receivedText =
+        await api.passingComplexStructs(root: createExampleTree());
+    if (mounted) setState(() => exampleText = newText);
+  }
+
+  Future<void> initServer() async {
+    print("Starting server");
+    await api.startServer();
   }
 }

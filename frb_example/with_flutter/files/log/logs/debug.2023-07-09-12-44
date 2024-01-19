@@ -1,0 +1,78 @@
+2023-07-09T12:44:57.431152Z  INFO logging_msg{yaks=6}: flutter_rust_bridge_example::app::system::log::itracing: Writing log
+2023-07-09T12:44:57.431911Z  WARN logging_msg{yaks=6}:write{yak=3}: flutter_rust_bridge_example::app::system::log::itracing: could not locate log!
+2023-07-09T12:44:57.432479Z ERROR logging_msg{yaks=6}: flutter_rust_bridge_example::app::system::log::itracing: failed to log message yak=3 error=missing log error.sources=[missing log, out of space]
+2023-07-09T12:44:57.443661Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 888.000µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.443660Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 885.300µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.447801Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 75.900µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.447951Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 70.300µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.453452Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 130.900µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.453452Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 98.600µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.458423Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 86.400µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.458655Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 99.400µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.461867Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 66.900µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.462110Z  INFO sqlx::query: PRAGMA foreign_keys = ON; …; rows affected: 0, rows returned: 0, elapsed: 64.700µs
+
+PRAGMA foreign_keys = ON;
+  
+2023-07-09T12:44:57.476827Z  INFO sqlx::query: SELECT * from rikdata_application …; rows affected: 0, rows returned: 16, elapsed: 12.749ms
+
+SELECT
+  *
+from
+  rikdata_application
+  
+2023-07-09T12:44:57.560942Z  INFO sqlx::query: SET sql_mode=(SELECT CONCAT(@@sql_mode, ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION')),time_zone='+00:00',NAMES …; rows affected: 0, rows returned: 0, elapsed: 2.565ms
+
+SET
+  sql_mode =(
+    SELECT
+      CONCAT(
+        @ @sql_mode,
+        ',PIPES_AS_CONCAT,NO_ENGINE_SUBSTITUTION'
+      )
+  ),
+  time_zone = '+00:00',
+  NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
+  
+2023-07-09T12:44:57.561394Z  WARN flutter_rust_bridge_example::startup: All settings are successfully cached    
+2023-07-09T12:44:57.561832Z  WARN flutter_rust_bridge_example::startup: All applications are successfully cached    
+2023-07-09T12:44:57.606945Z  WARN flutter_rust_bridge_example::startup: All java scripts are successfully cached    
+2023-07-09T12:44:57.617833Z  INFO sqlx::query: SELECT * from app_instance …; rows affected: 0, rows returned: 20, elapsed: 8.957ms
+
+SELECT
+  *
+from
+  app_instance
+  
+2023-07-09T12:44:57.631107Z  INFO sqlx::query: SELECT * from sys_action; rows affected: 0, rows returned: 125, elapsed: 11.551ms  
+2023-07-09T12:44:57.684950Z  INFO sqlx::query: SELECT * from sys_action_line; rows affected: 0, rows returned: 31, elapsed: 4.939ms  
+2023-07-09T12:44:57.705023Z  WARN flutter_rust_bridge_example::startup: Starting server @"localhost:3030"    
+2023-07-09T12:44:57.710213Z  INFO actix_server::builder: starting 4 workers
+2023-07-09T12:44:57.710760Z  INFO actix_server::server: Tokio runtime found; starting in existing Tokio runtime

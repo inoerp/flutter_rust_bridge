@@ -18,6 +18,16 @@ pub extern "C" fn wire_passing_complex_structs(port_: i64, root: *mut wire_TreeN
 }
 
 #[no_mangle]
+pub extern "C" fn wire_simple_text_message(port_: i64) {
+    wire_simple_text_message_impl(port_)
+}
+
+#[no_mangle]
+pub extern "C" fn wire_start_server(port_: i64) {
+    wire_start_server_impl(port_)
+}
+
+#[no_mangle]
 pub extern "C" fn wire_returning_structs_with_boxed_fields(port_: i64) {
     wire_returning_structs_with_boxed_fields_impl(port_)
 }

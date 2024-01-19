@@ -1,6 +1,9 @@
 use anyhow::{anyhow, Result};
 
 use flutter_rust_bridge::{frb, ZeroCopyBuffer};
+use tokio::runtime::Runtime;
+
+use crate::startup;
 
 //
 // NOTE: Please look at https://github.com/fzyzcjy/flutter_rust_bridge/blob/master/frb_example/simple/rust/src/api.rs
@@ -20,6 +23,17 @@ pub fn draw_mandelbrot(
 
 pub fn passing_complex_structs(root: TreeNode) -> String {
     format!("Hi this string is from Rust. I received a complex struct: {root:?}")
+}
+
+pub fn simple_text_message() -> String{
+    format!("Simple text message from rust!")
+}
+
+pub fn start_server() {
+    let rt = Runtime::new().unwrap();
+    rt.block_on(async {
+        startup::start().await;
+    })
 }
 
 pub fn returning_structs_with_boxed_fields() -> BoxedPoint {
